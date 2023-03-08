@@ -59,20 +59,6 @@
     display: block;
 }
 
-/** CARDS **/
-.columns.cards > div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.columns.cards div > div {
-    border: 1px solid #eaeaea;
-    padding: 10px 10px 10px 10px;
-}
-
-
 /** MEDIUM ICONS **/
 .columns.medium-icons > div  {
     justify-content: start;
