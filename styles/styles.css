@@ -16,7 +16,8 @@
   --link-hover-color: #136ff6;
   --link-color-dark: #fff;
   --background-color: #fff;
-  --overlay-background-color: #eee;
+  
+  --overlay-background-color: #fbfbfb;
   --highlight-background-color: #ebebeb;
   --text-color: #000;
   --dark-bg-color: #000;
@@ -257,7 +258,8 @@ main .section[data-section-status='initialized'] {
 }
 
 main .section.highlight {
-  background-color: var(--highlight-background-color);
+  background-color: var(--overlay-background-color);
+  border-top: 1px solid var(--highlight-background-color);
 }
 
 .purple-bg, .purple-bg h2, .purple-bg a {
@@ -268,31 +270,27 @@ main .section.highlight {
   color: var(--background-color);
 }
 
-.columns.medium-icons > div  {
-  justify-content: start;
-  align-items: flex-start;
-}
-
-.columns.medium-icons div > div {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.medium-icons div div > a{
-  text-align: center;
-}
-
-.medium-icons div div picture {
-  display: flex;
-  justify-content: center;
-}
-
-.medium-icons div div picture img {
-  width: 100px;
-  padding-bottom: 10px;
-}
-
 .section.centre {
   text-align: center;
 }
+
+/** HORIZONTAL LINKS **/
+
+.section.horizontal-links ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2em;
+  list-style: none;
+  padding-left: 0;
+}
+
+.section.horizontal-links ul li a{
+  text-decoration: underline;
+  color: #555;
+}
+
+.section.horizontal-links ul li a:hover {
+  text-decoration: none;
+}
+
