@@ -12,14 +12,89 @@
         display: flex;
         align-items: center;
         flex-direction: unset;
+        gap: 32px;
     }
 
     .columns > div > div {
         flex: 1;
-        margin-left: 32px;
+        
+        /* margin-left: 32px; */
     }
 
     .columns > div > div:first-of-type {
         margin-left: unset;
     }
+}   
+
+
+.columns.rtb div > div {
+    background-color: var(--background-color);
+    border: 1px solid var(--highlight-background-color);
+    padding: 0 18px 0 18px;
 }
+
+.columns.rtb div div:hover {
+    border: 1px solid #333;
+}
+
+.columns.rtb div div p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.columns.rtb div > div p:last-child {
+    font-size: var(--body-font-size-xs);
+}
+
+
+/** TOP **/
+.columns.top > div {
+    align-items: unset;
+}
+
+/** SMALL ICONS **/
+.columns.small-icons div div p picture img {
+    width: 26px;
+    height: auto;
+    display: block;
+}
+
+/** CARDS **/
+.columns.cards > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.columns.cards div > div {
+    border: 1px solid #eaeaea;
+    padding: 10px 10px 10px 10px;
+}
+
+
+/** MEDIUM ICONS **/
+.columns.medium-icons > div  {
+    justify-content: start;
+    align-items: flex-start;
+  }
+  
+  .columns.medium-icons div > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .columns.medium-icons div div > a {
+    text-align: center;
+  }
+  
+  .columns.medium-icons div div picture {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .columns.medium-icons div div picture img {
+    width: 100px;
+    padding-bottom: 10px;
+  }
