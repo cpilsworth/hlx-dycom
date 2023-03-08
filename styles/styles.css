@@ -16,8 +16,10 @@
   --link-hover-color: #136ff6;
   --background-color: #fff;
   --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
+  --highlight-background-color: #ebebeb;
   --text-color: #000;
+  --dark-bg-color: #000;
+  --dark-highlight-bg-color: #522a86;
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
@@ -234,4 +236,35 @@ main .section[data-section-status='initialized'] {
 
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+.purple-bg, .purple-bg h2, .purple-bg a {
+  background-color: var(--dark-highlight-bg-color);
+}
+
+.purple-bg h2, .purple-bg a {
+  color: var(--background-color);
+}
+
+.medium-icons div {
+}
+
+.medium-icons div > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.medium-icons div div > a{
+  text-align: center;
+}
+
+.medium-icons div div picture {
+  display: flex;
+  justify-content: center;
+}
+
+.medium-icons div div picture img {
+  width: 100px;
+  padding-bottom: 10px;
 }
