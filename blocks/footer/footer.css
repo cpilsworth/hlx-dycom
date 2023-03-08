@@ -1,7 +1,8 @@
 footer {
   padding: 2rem;
-  background-color: var(--overlay-background-color);
+  background-color: var(--dark-bg-color);
   font-size: var(--body-font-size-s);
+  color: var(--link-color-dark);  
 }
 
 footer .footer {
@@ -12,3 +13,29 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
+
+footer .footer a {
+  color: var(--link-color-dark);
+  text-decoration: none;
+}
+
+footer .footer a:hover {
+  text-decoration: underline;
+}
+
+footer .footer ul {
+  list-style: none;
+}
+
+footer .footer div > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: start;
+  
+}
+footer .footer div div ul {
+  flex: 1 1 auto;
+}
+
