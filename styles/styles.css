@@ -14,6 +14,7 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
+  --link-color-dark: #fff;
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ebebeb;
@@ -21,8 +22,7 @@
   --dark-bg-color: #000;
   --dark-highlight-bg-color: #522a86;
 
-  /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: 'DysonFutura', helvetica, ubuntu, roboto, noto, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -42,6 +42,28 @@
   /* nav height */
   --nav-height: 64px;
 
+}
+
+  /* fonts */
+  @font-face {
+    src: url(https://www.dyson.co.uk/etc.clientlibs/dyson/clientlibs/clientlib-head/resources/fonts/DysonFutura-Light.woff) format("woff");
+    font-family: DysonFutura;
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    src: url(/fonts/DysonFutura-Book.woff) format("woff");
+    font-family: DysonFutura;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    src: url(/fonts/DysonFutura-Medium.woff) format("woff");
+    font-family: DysonFutura;
+    font-weight: 500;
+    font-style: normal
 }
 
 body {
@@ -246,10 +268,12 @@ main .section.highlight {
   color: var(--background-color);
 }
 
-.medium-icons div {
+.columns.medium-icons > div  {
+  justify-content: start;
+  align-items: flex-start;
 }
 
-.medium-icons div > div {
+.columns.medium-icons div > div {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -267,4 +291,8 @@ main .section.highlight {
 .medium-icons div div picture img {
   width: 100px;
   padding-bottom: 10px;
+}
+
+.section.centre {
+  text-align: center;
 }
