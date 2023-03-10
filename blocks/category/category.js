@@ -17,13 +17,17 @@ const Product = ({ prod }) => html`
     <div class="cards-card-body">
         <h4>${prod?.name}</h4>
         <p>${prod?.meta_description}</p>
+        <p class="button-container">
+            <a href="https://www.dyson.co.uk/vacuum-cleaners" title="Shop now" class="button primary">Add to basket</a>
+            <em><a href="https://www.dyson.co.uk/hair-care" title="Shop now" class="button secondary">Show details</a></em>
+        </p>
     </div>
 </li>`;
 
 class ProductList extends Component  {
     render({category},  { products = []}) {
         return html`
-            <div class="cards" id={category}>
+            <div class="product cards" id={category}>
                 <ul>
                     ${products.map(product => html`<${Product} prod=${product}/>`)}
                 </ul>

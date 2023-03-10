@@ -29,3 +29,29 @@
     aspect-ratio: 4 / 3;
     object-fit: cover;
 }
+
+
+/** PRODUCTS **/
+.product.cards ul li > .cards-card-body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+}
+.product.cards ul li {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product.cards ul li .cards-card-body .button-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product.cards ul li .cards-card-body .button-container em { 
+    display: block;
+}
