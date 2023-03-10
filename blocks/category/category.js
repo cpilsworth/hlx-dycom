@@ -5,7 +5,6 @@ const html = htm.bind(h);
 
 async function fetchProductsForCategory(category_id) {
     return fetch(`https://mag619.adobedemo.com/graphql?variables={"category_id":\"${category_id}\"}&query=query($category_id:[String]!){products(filter:{category_id:{in:$category_id}}){items{sku%20name%20image{url}meta_description price_range{maximum_price{final_price{value}}}}}}`)
-    // return Promise.resolve(getStaticProductList(category_id))
         .then(response => response.json())
         .then(json => json.data.products.items);
 }
