@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: https://main--hlx-dycom--cpilsworth.hlx.page/
+- Live: https://main--hlx-dycom--cpilsworth.hlx.live/
 
 ## Installation
 
